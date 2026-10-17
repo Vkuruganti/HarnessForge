@@ -17,6 +17,7 @@ dependencies = []
 dev = ["pytest>=8", "build>=1.2", "cffconvert>=2.0"]
 
 [project.urls]
+"Author Website" = "https://vkuruganti.github.io"
 Repository = "https://github.com/Vkuruganti/HarnessForge"
 Issues = "https://github.com/Vkuruganti/HarnessForge/issues"
 
