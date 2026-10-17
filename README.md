@@ -80,4 +80,4 @@ HarnessForge also includes a simple HaaS model in which multiple agents inherit 
 
 ## License
 
-MIT.
+Apache License 2.0.

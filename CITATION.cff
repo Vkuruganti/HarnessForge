@@ -4,8 +4,8 @@ title: "HarnessForge"
 type: software
 version: 0.1.0
 date-released: 2026-10-16
-license: MIT
-repository-code: "https://github.com/<your-user>/HarnessForge"
+license: Apache-2.0
+repository-code: "https://github.com/Vkuruganti/HarnessForge"
 preferred-citation:
   type: article
   title: "Harness Engineering for Agentic AI: From Model Capability to Reliable, Governable, and Economic Value"
