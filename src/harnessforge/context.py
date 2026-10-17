@@ -32,7 +32,8 @@ def simulate_retention(required_facts: Sequence[str], trajectory_facts: Sequence
         selected = list(dict.fromkeys(required_facts))
         remaining = max_items - len(selected)
         if remaining > 0:
-            selected.extend(x for x in reversed(trajectory_facts) if x not in required)
+            recent = dict.fromkeys(reversed(trajectory_facts))
+            selected.extend(x for x in recent if x not in required)
         active = set(selected[:max_items])
     else:
         raise ValueError(f"unknown strategy: {strategy}")

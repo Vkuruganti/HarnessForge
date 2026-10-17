@@ -26,7 +26,7 @@ def detect_intent_drift(decisions: Iterable[ArchitectureDecision],
         if decision.status != "accepted":
             continue
         observed = observed_config.get(decision.field, "<missing>")
-        if observed != decision.expected_value:
+        if decision.field not in observed_config or observed != decision.expected_value:
             drifts.append(IntentDrift(
                 decision_id=decision.decision_id,
                 field=decision.field,

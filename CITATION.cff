@@ -2,11 +2,17 @@ cff-version: 1.2.0
 message: "If you use HarnessForge in academic work, please cite this software and the associated Harness Engineering paper."
 title: "HarnessForge"
 type: software
+authors:
+  - family-names: Kuruganti
+    given-names: Vas
 version: 0.1.0
 date-released: 2026-10-16
 license: Apache-2.0
 repository-code: "https://github.com/Vkuruganti/HarnessForge"
 preferred-citation:
   type: article
+  authors:
+    - family-names: Kuruganti
+      given-names: Vas
   title: "Harness Engineering for Agentic AI: From Model Capability to Reliable, Governable, and Economic Value"
   year: 2026

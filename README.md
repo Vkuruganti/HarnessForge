@@ -78,6 +78,16 @@ CPRO is not a universal quality score. Its usefulness depends on a defensible, t
 
 HarnessForge also includes a simple HaaS model in which multiple agents inherit shared, versioned harness configuration instead of implementing context, retry, model-routing, verification, and policy logic independently.
 
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for development setup and the pull request process, and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) for community expectations. Report vulnerabilities privately using [SECURITY.md](SECURITY.md).
+
+## Citation
+
+See [CITATION.cff](CITATION.cff) for software and paper citation metadata.
+
 ## License
 
-Apache License 2.0.
+Copyright 2026 Vas Kuruganti and HarnessForge Contributors.
+
+Licensed under the [Apache License 2.0](LICENSE). HarnessForge is an independent project and is not affiliated with the Apache Software Foundation.

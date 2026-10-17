@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+from math import isfinite
 
 @dataclass(frozen=True)
 class HaaSEconomics:
@@ -6,6 +7,20 @@ class HaaSEconomics:
     local_engineering_cost_per_agent: float
     shared_platform_cost: float
     incremental_onboarding_cost_per_agent: float = 0.0
+
+    def __post_init__(self) -> None:
+        if isinstance(self.number_of_agents, bool) or not isinstance(self.number_of_agents, int):
+            raise ValueError("number_of_agents must be a non-negative integer")
+        if self.number_of_agents < 0:
+            raise ValueError("number_of_agents must be a non-negative integer")
+        for name in (
+            "local_engineering_cost_per_agent",
+            "shared_platform_cost",
+            "incremental_onboarding_cost_per_agent",
+        ):
+            value = getattr(self, name)
+            if not isfinite(value) or value < 0:
+                raise ValueError(f"{name} must be finite and non-negative")
 
     def local_total(self) -> float:
         return self.number_of_agents * self.local_engineering_cost_per_agent

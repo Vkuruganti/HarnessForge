@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=68", "wheel"]
+requires = ["setuptools>=77.0.3", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -8,11 +8,17 @@ version = "0.1.0"
 description = "Theory-building tools for reliable, governable, and cost-efficient AI agent harnesses."
 readme = "README.md"
 requires-python = ">=3.10"
-license = {text = "Apache-2.0"}
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+authors = [{name = "Vas Kuruganti", email = "vkuruganti1@gmail.com"}]
 dependencies = []
 
 [project.optional-dependencies]
-dev = ["pytest>=8"]
+dev = ["pytest>=8", "build>=1.2", "cffconvert>=2.0"]
+
+[project.urls]
+Repository = "https://github.com/Vkuruganti/HarnessForge"
+Issues = "https://github.com/Vkuruganti/HarnessForge/issues"
 
 [tool.setuptools.packages.find]
 where = ["src"]
