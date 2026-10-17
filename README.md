@@ -26,7 +26,7 @@ Default parameters are synthetic. The examples are designed to expose mechanisms
 ## Quick start
 
 ```bash
-git clone https://github.com/<your-user>/HarnessForge.git
+git clone https://github.com/Vkuruganti/HarnessForge.git
 cd HarnessForge
 python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
